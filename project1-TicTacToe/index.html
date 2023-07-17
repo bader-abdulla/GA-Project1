@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project1 - XO</title>
+</head>
+<body>
+
+
+    <header>
+        <h1 id="tictactoe"> Tic-Tac-Toe </h1>
+        <h1 id="xo"><span id="x">x</span><span id="o">o</span></h1>
+    </header>
+
+
+    <section id="choosevs">
+        <button id="player-ai"> Player vs AI </button>
+        <button id="player-player"> Player1 vs Player2 </button>
+    </section>
+
+
+    <section id="names">
+        <section id="p-ai-name">
+            <div id="name1">
+                <p class="p-players"><b>You chose 'Player vs AI'</b></p>
+                <div id="playername">
+                    <h5>Player Name:</h5>
+                    <input id="playerinput">
+                    <button class="done0" id="done0"> Done </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="p1-p2-name">
+            <div id="name2">
+                <p class="p-players"><b>You chose 'Player1 vs Player2'</b></p>
+                <div id="player1name">
+                    <h5>Player1 Name:</h5>
+                    <input id="player1input">
+                    <button id="done1"> Done </button>
+                </div>
+                <div id="player2name">
+                    <h5>Player2 Name:</h5>
+                    <input id="player2input">
+                    <button id="done2"> Done </button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <section id="shape">
+        <h4>Choose Shape:</h4>
+        <div id="shapechoice">
+            <button id="xbutton"> <img id="xpicture" src="images/x.png" alt="X shape"> </button>
+            <button id="obutton"> <img id="opicture" src="images/o.png" alt="O shape"> </button>
+        </div>
+    </section>
+
+
+    <main id="gamecontainer">
+
+        <!-- <div id="start">
+            <button id="startgame"> Start Game </button>
+        </div> -->
+
+        <div id="game">
+            <div class="row firstrow">
+                <button class="box box1" id="1" onClick="handleButtonClick(id)"> 
+                    <img src="images/empty.png" alt="">
+                </button>
+
+                <button class="box box2" id="2" onClick="handleButtonClick(id)">
+                    <img src="images/empty.png" alt="">
+                </button>
+
+                <button class="box box3" id="3" onClick="handleButtonClick(id)">
+                    <img src="images/empty.png" alt="">
+                </button>
+            </div>
+
+            <div class="row secondrow">
+                <button class="box box4" id="4" onClick="handleButtonClick(id)">
+                    <img src="images/empty.png" alt="">
+                </button>
+
+                <button class="box box5" id="5" onClick="handleButtonClick(id)">
+                    <img src="images/empty.png" alt="">
+                </button>
+
+                <button class="box box6" id="6" onClick="handleButtonClick(id)">
+                    <img src="images/empty.png" alt="">
+                </button>
+            </div>
+
+            <div class="row thirdrow">
+                <button class="box box7" id="7" onClick="handleButtonClick(id)">
+                    <img src="images/empty.png" alt="">
+                </button>
+
+                <button class="box box8" id="8" onClick="handleButtonClick(id)">
+                    <img src="images/empty.png" alt="">
+                </button>
+
+                <button class="box box9" id="9" onClick="handleButtonClick(id)">
+                    <img src="images/empty.png" alt="">
+                </button>
+            </div>
+        </div>
+    
+        <div id="restart">
+            <button id="restartgame"> Restart Game </button>
+        </div>
+
+    </main>
+
+
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
